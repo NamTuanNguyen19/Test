@@ -1,0 +1,6 @@
+cmake_minimum_required(VERSION 2.8)
+project( ChangeBri )
+find_package( OpenCV REQUIRED )
+include_directories( ${OpenCV_INCLUDE_DIRS} )
+add_executable( ChangeBri ChangeBri.cpp )
+target_link_libraries( ChangeBri ${OpenCV_LIBS} )
